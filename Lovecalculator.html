@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Love Calculator</title>
+  <!-- favicon-->
+  <link rel="shortcut icon" href="/heart.ico">
+  <!-- Style Sheet  -->
+  <link rel="stylesheet" href="Lovecalculator.css">
+  <!-- icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Lobster|Montserrat|Raleway" rel="stylesheet">
+</head>
+ <style>
+/* body {
+    background-image: -webkit-linear-gradient(65deg, #f10625 30%, #887476 70%);
+  background-color: #c7004c;
+  color: #a81307;;
+  font-family: 'Lobster', cursive;
+}
+
+.calculator {
+  padding: 50px 50px 20px 50px;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 100px;
+  /* background-color:#211717; */
+  /* background-image: url(https://images.unsplash.com/photo-1521033719794-41049d18b8d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGxvdmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+  width: 50%; */
+}
+/* .Notice1{
+    color: #ffffff; */
+}
+/* 
+.name-box {
+  padding: 12px 14px;
+  width: 40% */
+}
+
+/* buttons */
+/* .buttons {
+  color: #ffd7e8;
+  background-color: #f50b0b;
+  border: solid;
+  border-color: #f70a3d;
+  cursor: pointer;
+  margin: 10px 10px;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  opacity: 0.5;
+  font-size: 1rem; */
+}
+
+/* .buttons:hover {
+  box-shadow: 5px 3px #bd245f;
+  opacity: 1;
+  color: #ee4266; */
+}
+/* Social Media  */
+/* .social-media{ opacity:0.5;
+  cursor:pointer;
+  padding: 10px 3px 0 4px}
+  .social-media:hover{opacity: 1;}
+ a{color:#ee4266;} */
+ /* copy right  */
+ /* p{opacity: 1;
+ font-size: 1rem;}
+ #notice{opacity: 0.5;
+ font-size:.8rem;}
+/* Media Query */
+/* @media (max-width:600px) {
+  .buttons{width:30%;
+  border-radius: 5px;}
+  .calculator {width: 60%;
+    padding: 10px 20px 10px 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+  } */
+} */ */
+
+
+
+
+
+
+
+ </style>
+<body>
+  <div id="love-calculator" class="calculator">
+    <form id="loveForm" id="loveform" class="" action="/" onsubmit="return loveValidation()" method="post">
+      <h1>Welcome Love birds<i class="fas fa-heartbeat"></i></h1>
+      <h2 id="lovefinal">Calculate your love score</h2>
+      <p>Please enter names below</p>
+      <h2>Your Name</h2>
+      <input id="firstname" class="yourname name-box" type="text" name="firstName" placeholder="Your Name"></input>
+      <h2>Lover's Name</h2>
+      <input id="lovername" class="lovername name-box" type="text" name="lovername" placeholder="Lover's Name"></input>
+    </form>
+    <button id="love-button" onclick="loveCalculator()" class="buttons" type="submit" value="Submit"><i class="fas fa-heart"></i> Submit</button>
+    <button onclick="resetFunction()" class="buttons" type="submit"><i class="fas fa-heart-broken"></i> Reset</button>
+    <footer>
+      <a href="https://www.linkedin.com/in/rakesh2001/"><i class="social-media fab fa-1x fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/jagu_jinss/"><i class="social-media fab fa-1x fa-instagram"></i></a>
+      <p id="notice" class="Notice1">*Note:Love is Life!</p>
+      <p>© 2020 Rakesh kumar lenka</p>
+    </footer>
+  </div>
+  <script src="Lovecalculator.js" charset="utf-8"></script>
+<script>
+// //submit button
+// // jshint esversion:6
+// var isNotClicked=true;
+
+
+//  var loveCalculator=function () {
+//   var yourName = document.getElementById("firstname").value;
+//   var loversName = document.getElementById("lovername").value;
+//   var loveScore = Math.random() * 100;
+//   var loveFinal = Math.round(loveScore);
+//   if (yourName === "") {
+//     alert("please enter your name");
+//   } else if (loversName === "") {
+//     alert("Please enter your lovers name");
+
+//   } else if (isNotClicked) {
+//     document.getElementById("lovefinal").innerHTML = yourName + " and " + loversName + " your lovescore is " + loveFinal + " % ";
+//     isNotclicked=false;
+//   }
+//   else {
+//     document.getElementById("lovefinal").innerHTML = yourName + " and " + loversName + " your lovescore is " + loveFinal + " % ";
+//   }
+// };
+
+// //resetbutton
+// function resetFunction() {
+//   location.reload();
+// }
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
+
+
+
