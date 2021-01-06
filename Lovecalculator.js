@@ -6,7 +6,7 @@ var isNotClicked=true;
  var loveCalculator=function () {
   var yourName = document.getElementById("firstname").value;
   var loversName = document.getElementById("lovername").value;
-  var loveScore = Math.random() * 100;
+  var loveScore = Math.random(100) * 100;
   var loveFinal = Math.round(loveScore);
   if (yourName === "") {
     alert("please enter your name");
